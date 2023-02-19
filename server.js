@@ -21,4 +21,4 @@ mongoose.connect('mongodb+srv://RIPVANWINKLE:plop@cluster0.rvosq.mongodb.net/?re
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
 
-app.listen(5500)
+app.listen(process.env.PORT || 3000)
